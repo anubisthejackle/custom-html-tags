@@ -29,8 +29,12 @@
         @apply bg-gray-100;
     }
 
-    menu\-item\-title {
-        @apply text-center block w-full;
+    main\-menu main\-menu\-row menu\-item menu\-item\-title {
+        @apply text-center block w-full h-full;
+    }
+
+    main\-menu main\-menu\-row menu\-item a {
+        @apply w-full h-full flex justify-center items-center;
     }
 
     content\-header {
@@ -38,11 +42,11 @@
     }
 
     body > content\-paragraph {
-        @apply px-96;
+        @apply px-96 odd:bg-gray-300;
     }
 
     content\-paragraph {
-        @apply py-5 block text-2xl odd:bg-gray-300;
+        @apply py-5 block text-2xl;
     }
 
     .twitter-tweet {
