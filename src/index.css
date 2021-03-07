@@ -33,10 +33,6 @@ html {
         @apply bg-gray-100;
     }
 
-    main\-menu main\-menu\-row menu\-item menu\-item\-title {
-        @apply text-center block w-full h-full;
-    }
-
     main\-menu main\-menu\-row menu\-item a {
         @apply w-full h-full flex justify-center items-center;
     }
