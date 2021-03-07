@@ -33,8 +33,20 @@
         @apply text-center block w-full;
     }
 
+    content\-header {
+        @apply text-4xl pb-4 font-extrabold block;
+    }
+
+    body > content\-paragraph {
+        @apply px-96;
+    }
+
     content\-paragraph {
-        @apply py-5 px-96 block text-2xl odd:bg-gray-300;
+        @apply py-5 block text-2xl odd:bg-gray-300;
+    }
+
+    .twitter-tweet {
+        @apply m-auto;
     }
 
 }

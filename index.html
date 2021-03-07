@@ -13,7 +13,7 @@
     
     <logo>
       <logo-text>
-        Custom HTML
+        Custom HTML Tags
       </logo-text>
     </logo>
     
@@ -23,7 +23,9 @@
 
         <menu-item>
           <menu-item-title>
-            Item 1
+            <a href="#fourth">
+              Item 1
+            </a>
           </menu-item-title>
         </menu-item>
   
@@ -50,21 +52,66 @@
     </main-menu>
     
     <content-paragraph>
-      Welcome to my little test project! Basically, this is a project showing how we might write more semantic HTML.
+      <content-header>
+        Welcome to my little test project!
+      </content-header>
+      Basically, this is a project showing how we might write more semantic HTML.
       Each tag on this page is a custom HTML tag -- those that aren't required to run it, at least. Styling is done
       with Tailwind CSS by creating custom components. This allows us to create a minimal HTML front-end, and contain
       all of the style in our CSS file -- all without using any class names.
     </content-paragraph>
 
     <content-paragraph>
-      Second paragraph.
+      <content-header>
+        Why this project?
+      </content-header>
+      In November of 2020, <a href="https://jamonholmgren.com/">Jamon Holmgren</a> posted this tweet:
+
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just musing here...<br><br>&lt;div class=“card-container”&gt;<br> &lt;div class=“card-title”&gt;&lt;/div&gt;<br> &lt;div class=“card-description”&gt;&lt;/div&gt;<br>&lt;/div&gt;<br><br>Or<br><br>&lt;card-container&gt;<br> &lt;card-title&gt;&lt;/card-title&gt;<br> &lt;card-description&gt;&lt;card-description&gt;<br>&lt;/card-container&gt;<br><br>Why can’t we do the second?</p>&mdash; Jamon 🚜 (@jamonholmgren) <a href="https://twitter.com/jamonholmgren/status/1333104286872453120?ref_src=twsrc%5Etfw">November 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      It got me thinking. Why not? We already use custom tags for things like Vue.js, React, and Angular.
+      It stuck in my head, and I started thinking about ways that it could be used in a real world environment.
     </content-paragraph>
 
     <content-paragraph>
+      <content-header>
+        Structure of this project
+      </content-header>
+      
+      <content-paragraph>
+        The HTML of this project uses primarily custom HTML tags. For instance, the tag this paragraph is wrapped
+        in is a &lt;content-paragraph&gt; tag. The tag for the header of this block is a &lt;content-header&gt; tag.
+      </content-paragraph>
+      
+      Wherever possible, a custom tag was used. Even when traditional HTML tags may work better. Such as for an h2
+      in place of a content-header.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        Header 2
+      </content-header>
       Third paragraph.
     </content-paragraph>
 
     <content-paragraph>
+      <content-header>
+        Header 2
+      </content-header>
+      Third paragraph.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        Header 2
+      </content-header>
+      Third paragraph.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        Header 2
+      </content-header>
       Fourth paragraph.
     </content-paragraph>
 
