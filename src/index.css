@@ -49,6 +49,10 @@ html {
         @apply py-5 block text-2xl;
     }
 
+    content\-paragraph a {
+        @apply underline;
+    }
+
     .twitter-tweet {
         @apply m-auto;
     }
