@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  <script type="module" crossorigin src="/assets/index.db80eba1.js"></script>
+  <link rel="stylesheet" href="/assets/index.6719ed30.css">
+</head>
+
+  <body>
+    
+    <logo>
+      <logo-text>
+        Custom HTML Tags
+      </logo-text>
+    </logo>
+    
+    <main-menu>
+
+      <main-menu-row>
+
+        <menu-item>
+          <menu-item-title>
+            <a href="#intro">
+              Introduction
+            </a>
+          </menu-item-title>
+        </menu-item>
+  
+        <menu-item>
+          <menu-item-title>
+            <a href="#why">
+              Why this project?
+            </a>
+          </menu-item-title>
+        </menu-item>
+  
+        <menu-item>
+          <menu-item-title>
+            <a href="#structure">
+              Project Structure
+            </a>
+          </menu-item-title>
+        </menu-item>
+  
+        <menu-item>
+          <menu-item-title>
+            <a href="#style">
+              Project Style
+            </a>
+          </menu-item-title>
+        </menu-item>
+  
+        <menu-item>
+          <menu-item-title>
+            <a href="#a11y">
+              Accessibility
+            </a>
+          </menu-item-title>
+        </menu-item>
+  
+        <menu-item>
+          <menu-item-title>
+            <a href="#not-custom">
+                What isn't custom?
+            </a>
+          </menu-item-title>
+        </menu-item>
+      
+      </main-menu-row>
+
+    </main-menu>
+    
+    <content-paragraph>
+      <content-header>
+        <a name="intro"></a>
+        Welcome to my little test project!
+      </content-header>
+      Basically, this is a project showing how we might write more semantic HTML.
+      Each tag on this page is a custom HTML tag -- those that aren't required to run it, at least. Styling is done
+      with Tailwind CSS by creating custom components. This allows us to create a minimal HTML front-end, and contain
+      all of the style in our CSS file -- all without using any class names.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        <a name="why"></a>
+        Why this project?
+      </content-header>
+      In November of 2020, <a href="https://jamonholmgren.com/">Jamon Holmgren</a> posted this tweet:
+
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just musing here...<br><br>&lt;div class=“card-container”&gt;<br> &lt;div class=“card-title”&gt;&lt;/div&gt;<br> &lt;div class=“card-description”&gt;&lt;/div&gt;<br>&lt;/div&gt;<br><br>Or<br><br>&lt;card-container&gt;<br> &lt;card-title&gt;&lt;/card-title&gt;<br> &lt;card-description&gt;&lt;card-description&gt;<br>&lt;/card-container&gt;<br><br>Why can’t we do the second?</p>&mdash; Jamon 🚜 (@jamonholmgren) <a href="https://twitter.com/jamonholmgren/status/1333104286872453120?ref_src=twsrc%5Etfw">November 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      It got me thinking. Why not? We already use custom tags for things like Vue.js, React, and Angular.
+      It stuck in my head, and I started thinking about ways that it could be used in a real world environment.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        <a name="structure"></a>
+        Structure of this project
+      </content-header>
+      
+      <content-paragraph>
+        The HTML of this project uses primarily custom HTML tags. For instance, the tag this paragraph is wrapped
+        in is a &lt;content-paragraph&gt; tag. The tag for the header of this block is a &lt;content-header&gt; tag.
+      </content-paragraph>
+      
+      Wherever possible, a custom tag was used. Even when traditional HTML tags may work better. Such as for an h2
+      in place of a content-header.
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        <a name="style"></a>
+        How this project is styled
+      </content-header>
+      
+      Styling for this project comes from Tailwind CSS. Behind the scenes this is a Vue.js project, with all the Vue
+      removed. All that's left are the build scripts. Styling is done at the tag level, and uses Tailwind's @apply directive
+      to apply Tailwind styles to tags. This completely separates the styling from the structure, without the need for us
+      to apply any extraneous classes to our HTML.
+
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        <a name="a11y"></a>
+        A word about Accessibility
+      </content-header>
+      {{More Research Required}}
+    </content-paragraph>
+
+    <content-paragraph>
+      <content-header>
+        <a name="not-custom"></a>
+        What tags aren't custom?
+      </content-header>
+      
+      <content-paragraph>
+        For the purposes of this project, the html, head, and body tags are all used. Anything inside of the head area is
+        allowable. Custom HTML tags create a div, which is referencable by that tag. So wherever a div with a class may have
+        been used, a custom tag has been used.
+      </content-paragraph>
+
+      <content-paragraph>
+        Other places traditional HTML tags have been used are the embedded Tweet, and all of the anchor tags, as those are required
+        to make the menu function as it should.
+      </content-paragraph>
+    </content-paragraph>
+
+  </body>
+
+</html>
