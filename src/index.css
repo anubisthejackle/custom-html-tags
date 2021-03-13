@@ -22,7 +22,7 @@ html {
     }
 
     main\-menu > main\-menu\-row {
-        @apply flex m-auto flex-row ;
+        @apply flex m-auto flex-row flex-wrap;
     }
 
     main\-menu > main\-menu\-row > menu\-item {
@@ -42,7 +42,7 @@ html {
     }
 
     body > content\-paragraph {
-        @apply px-96 odd:bg-gray-300;
+        @apply px-10 md:px-16 lg:px-24 xl:px-96 odd:bg-gray-300;
     }
 
     content\-paragraph {
