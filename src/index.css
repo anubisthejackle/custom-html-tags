@@ -53,8 +53,4 @@ html {
         @apply underline;
     }
 
-    .twitter-tweet {
-        @apply m-auto;
-    }
-
 }
