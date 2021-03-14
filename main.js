@@ -6,7 +6,7 @@ function ready(fn) {
     }
 }
 
-class LogoText extends HTMLElement {
+class LogoText extends HTMLHeadingElement {
 
     constructor() {
         super();
