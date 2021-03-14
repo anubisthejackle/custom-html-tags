@@ -8,6 +8,11 @@ function ready(fn) {
 
 ready(function() {
 
+    let logoTexts = document.getElementsByTagName('logo-text');
+    for(let text of logoTexts) {
+        text.setAttribute("role","heading");
+    }
+
     let paragraphs = document.getElementsByTagName('content-paragraph');
     for(let graph of paragraphs) {
         graph.setAttribute("role", "article");
