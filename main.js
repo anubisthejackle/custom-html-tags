@@ -26,7 +26,16 @@ class ARIAImg extends HTMLElement {
     }
 }
 
-class LogoText extends ARIAHeading {}
+class LogoText extends ARIAHeading {
+    connectedCallback() {
+        let h1 = document.createElement('h1');
+        setTimeout( () => {
+            h1.innerHTML = this.innerHTML;
+            this.innerHTML = '';
+            this.appendChild(h1);
+        });
+    }
+}
 class ContentHeader extends ARIAHeading {}
 class ContentParagraph extends ARIAArticle {}
 class MainMenu extends ARIANav {}
