@@ -1,43 +1,39 @@
-function ready(fn) {
-    if (document.readyState != 'loading'){
-      fn();
-    } else {
-      document.addEventListener('DOMContentLoaded', fn);
-    }
-}
-
-class LogoText extends HTMLHeadingElement {
-
+class ARIAHeading extends HTMLElement {
     constructor() {
         super();
+        this.setAttribute('role','heading');
     }
-
 }
 
-customElements.define("logo-text", LogoText, {
-    extends:'h1'
-});
+class ARIAArticle extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('role', 'article');
+    }
+}
 
-ready(function() {
+class ARIANav extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('role', 'navigation');
+    }
+}
 
-    let paragraphs = document.getElementsByTagName('content-paragraph');
-    for(let graph of paragraphs) {
-        graph.setAttribute("role", "article");
-    };
+class ARIAImg extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('role','img');
+    }
+}
 
-    let headers = document.getElementsByTagName('content-header');
-    for(let header of headers) {
-        header.setAttribute("role", "heading");
-    };
+class LogoText extends ARIAHeading {}
+class ContentHeader extends ARIAHeading {}
+class ContentParagraph extends ARIAArticle {}
+class MainMenu extends ARIANav {}
+class SiteLogo extends ARIAImg {}
 
-    let mainMenus = document.getElementsByTagName('main-menu');
-    for(let menu of mainMenus) {
-        menu.setAttribute("role","navigation");
-    };
-
-    let logos = document.getElementsByTagName('site-logo');
-    for(let logo of logos) {
-        logo.setAttribute("role", "img");
-    };
-
-});
+customElements.define("logo-text", LogoText);
+customElements.define("content-header", ContentHeader);
+customElements.define("content-paragraph", ContentParagraph);
+customElements.define("main-menu", MainMenu);
+customElements.define("site-logo", SiteLogo);
