@@ -6,12 +6,19 @@ function ready(fn) {
     }
 }
 
-ready(function() {
+class LogoText extends HTMLElement {
 
-    let logoTexts = document.getElementsByTagName('logo-text');
-    for(let text of logoTexts) {
-        text.setAttribute("role","heading");
+    constructor() {
+        super();
     }
+
+}
+
+customElements.define("logo-text", LogoText, {
+    extends:'h1'
+});
+
+ready(function() {
 
     let paragraphs = document.getElementsByTagName('content-paragraph');
     for(let graph of paragraphs) {
