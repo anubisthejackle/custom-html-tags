@@ -48,8 +48,16 @@ class SiteLogo extends ARIAImg {
     }
 }
 
+class ContentWrapper extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('role', 'main');
+    }
+}
+
 customElements.define("logo-text", LogoText);
 customElements.define("content-header", ContentHeader);
 customElements.define("content-paragraph", ContentParagraph);
+customElements.define("content-wrapper", ContentWrapper);
 customElements.define("main-menu", MainMenu);
 customElements.define("site-logo", SiteLogo);

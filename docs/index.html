@@ -8,7 +8,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom HTML Tags</title>
-  <script type="module" crossorigin src="/custom-html-tags/assets/index.de21a8d0.js"></script>
+  <script type="module" crossorigin src="/custom-html-tags/assets/index.ba0fffaa.js"></script>
   <link rel="stylesheet" href="/custom-html-tags/assets/index.051cc463.css">
 </head>
 
@@ -76,82 +76,84 @@
 
     </main-menu>
     
-    <content-paragraph>
-      <content-header id="intro">
-        Welcome to my little test project!
-      </content-header>
-      Basically, this is a project showing how we might write more semantic HTML.
-      Each tag on this page is a custom HTML tag -- those that aren't required to run it, at least. Styling is done
-      with Tailwind CSS by creating custom components. This allows us to create a minimal HTML front-end, and contain
-      all of the style in our CSS file -- all without using any class names.
-    </content-paragraph>
-
-    <content-paragraph>
-      <content-header id="why">
-        Why this project?
-      </content-header>
-      
-      <content-paragraph>
-        In November of 2020, <a href="https://jamonholmgren.com/">Jamon Holmgren</a> posted <a href="https://twitter.com/jamonholmgren/status/1333104286872453120">this tweet</a>.
-        In it he poses a question: Why should we use div elemnts with class attributes for styling, when we could simply
-        use custom HTML tags using those same class names?
-      </content-paragraph>
-
-      <content-paragraph>
-        It got me thinking. Why not? We already use custom tags for things like Vue.js, React, and Angular.
-        It stuck in my head, and I started thinking about ways that it could be used in a real world environment.
-      </content-paragraph>
-    </content-paragraph>
-
-    <content-paragraph>
-      <content-header id="structure">
-        Structure of this project
-      </content-header>
-      
-      <content-paragraph>
-        The HTML of this project uses primarily custom HTML tags. For instance, the tag this paragraph is wrapped
-        in is a &lt;content-paragraph&gt; tag. The tag for the header of this block is a &lt;content-header&gt; tag.
-      </content-paragraph>
-      
-      Wherever possible, a custom tag was used. Even when traditional HTML tags may work better. Such as for an h2
-      in place of a content-header.
-    </content-paragraph>
-
-    <content-paragraph>
-      <content-header id="style">
-        How this project is styled
-      </content-header>
-      
-      Styling for this project comes from Tailwind CSS. Behind the scenes this is a Vue.js project, with all the Vue
-      removed. All that's left are the build scripts. Styling is done at the tag level, and uses Tailwind's @apply directive
-      to apply Tailwind styles to tags. This completely separates the styling from the structure, without the need for us
-      to apply any extraneous classes to our HTML.
-
-    </content-paragraph>
-
-    <content-paragraph>
-      <content-header id="a11y">
-        A word about Accessibility
-      </content-header>
-      {{More Research Required}}
-    </content-paragraph>
-
-    <content-paragraph>
-      <content-header id="not-custom">
-        What tags aren't custom?
-      </content-header>
-      
-      <content-paragraph>
-        For the purposes of this project, the html, head, and body tags are all used. Anything inside of the head area is
-        allowable. Custom HTML tags create a div, which is referencable by that tag. So wherever a div with a class may have
-        been used, a custom tag has been used.
-      </content-paragraph>
-
-      <content-paragraph>
-        Other places traditional HTML tags have been used are all of the anchor tags, as those are required
-        to make the menu function as it should.
-      </content-paragraph>
-    </content-paragraph>
+    <content-wrapper>
+        <content-paragraph>
+          <content-header id="intro">
+            Welcome to my little test project!
+          </content-header>
+          Basically, this is a project showing how we might write more semantic HTML.
+          Each tag on this page is a custom HTML tag -- those that aren't required to run it, at least. Styling is done
+          with Tailwind CSS by creating custom components. This allows us to create a minimal HTML front-end, and contain
+          all of the style in our CSS file -- all without using any class names.
+        </content-paragraph>
+    
+        <content-paragraph>
+          <content-header id="why">
+            Why this project?
+          </content-header>
+          
+          <content-paragraph>
+            In November of 2020, <a href="https://jamonholmgren.com/">Jamon Holmgren</a> posted <a href="https://twitter.com/jamonholmgren/status/1333104286872453120">this tweet</a>.
+            In it he poses a question: Why should we use div elemnts with class attributes for styling, when we could simply
+            use custom HTML tags using those same class names?
+          </content-paragraph>
+    
+          <content-paragraph>
+            It got me thinking. Why not? We already use custom tags for things like Vue.js, React, and Angular.
+            It stuck in my head, and I started thinking about ways that it could be used in a real world environment.
+          </content-paragraph>
+        </content-paragraph>
+    
+        <content-paragraph>
+          <content-header id="structure">
+            Structure of this project
+          </content-header>
+          
+          <content-paragraph>
+            The HTML of this project uses primarily custom HTML tags. For instance, the tag this paragraph is wrapped
+            in is a &lt;content-paragraph&gt; tag. The tag for the header of this block is a &lt;content-header&gt; tag.
+          </content-paragraph>
+          
+          Wherever possible, a custom tag was used. Even when traditional HTML tags may work better. Such as for an h2
+          in place of a content-header.
+        </content-paragraph>
+    
+        <content-paragraph>
+          <content-header id="style">
+            How this project is styled
+          </content-header>
+          
+          Styling for this project comes from Tailwind CSS. Behind the scenes this is a Vue.js project, with all the Vue
+          removed. All that's left are the build scripts. Styling is done at the tag level, and uses Tailwind's @apply directive
+          to apply Tailwind styles to tags. This completely separates the styling from the structure, without the need for us
+          to apply any extraneous classes to our HTML.
+    
+        </content-paragraph>
+    
+        <content-paragraph>
+          <content-header id="a11y">
+            A word about Accessibility
+          </content-header>
+          {{More Research Required}}
+        </content-paragraph>
+    
+        <content-paragraph>
+          <content-header id="not-custom">
+            What tags aren't custom?
+          </content-header>
+          
+          <content-paragraph>
+            For the purposes of this project, the html, head, and body tags are all used. Anything inside of the head area is
+            allowable. Custom HTML tags create a div, which is referencable by that tag. So wherever a div with a class may have
+            been used, a custom tag has been used.
+          </content-paragraph>
+    
+          <content-paragraph>
+            Other places traditional HTML tags have been used are all of the anchor tags, as those are required
+            to make the menu function as it should.
+          </content-paragraph>
+        </content-paragraph>
+    </content-wrapper>
 
   </body>
 
