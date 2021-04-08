@@ -32,7 +32,12 @@ class LogoText extends ARIAHeading {
         this.setAttribute('aria-level', 1);
     }
 }
-class ContentHeader extends ARIAHeading {}
+class ContentHeader extends ARIAHeading {
+    constructor() {
+        super();
+        this.setAttribute('aria-level', 2);
+    }
+}
 class ContentParagraph extends ARIAArticle {}
 class MainMenu extends ARIANav {}
 class SiteLogo extends ARIAImg {}
