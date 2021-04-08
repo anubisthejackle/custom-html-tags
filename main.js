@@ -31,15 +31,6 @@ class LogoText extends ARIAHeading {
         super();
         this.setAttribute('aria-level', 1);
     }
-    
-    connectedCallback() {
-        let h1 = document.createElement('h1');
-        setTimeout( () => {
-            h1.innerHTML = this.innerHTML;
-            this.innerHTML = '';
-            this.appendChild(h1);
-        });
-    }
 }
 class ContentHeader extends ARIAHeading {}
 class ContentParagraph extends ARIAArticle {}
