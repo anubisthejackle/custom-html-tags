@@ -41,7 +41,7 @@ html {
         @apply text-4xl pb-4 font-extrabold block;
     }
 
-    body > content\-paragraph {
+    content\-wrapper > content\-paragraph {
         @apply px-10 md:px-16 lg:px-24 xl:px-96 odd:bg-gray-300;
     }
 
