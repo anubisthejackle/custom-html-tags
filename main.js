@@ -55,9 +55,17 @@ class ContentWrapper extends HTMLElement {
     }
 }
 
+class PageBranding extends HTMLElement {
+    constructor() {
+        super();
+        this.setAttribute('role', 'banner');
+    }
+}
+
 customElements.define("logo-text", LogoText);
 customElements.define("content-header", ContentHeader);
 customElements.define("content-paragraph", ContentParagraph);
 customElements.define("content-wrapper", ContentWrapper);
 customElements.define("main-menu", MainMenu);
+customElements.define("page-branding", PageBranding);
 customElements.define("site-logo", SiteLogo);
