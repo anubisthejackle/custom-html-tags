@@ -30,6 +30,7 @@ class LogoText extends ARIAHeading {
     constructor() {
         super();
         this.setAttribute('aria-level', 1);
+        this.setAttribute('id', 'logo-text');
     }
 }
 class ContentHeader extends ARIAHeading {
@@ -40,7 +41,12 @@ class ContentHeader extends ARIAHeading {
 }
 class ContentParagraph extends ARIAArticle {}
 class MainMenu extends ARIANav {}
-class SiteLogo extends ARIAImg {}
+class SiteLogo extends ARIAImg {
+    constructor() {
+        super();
+        this.setAttribute('aria-labelledby', 'logo-text');
+    }
+}
 
 customElements.define("logo-text", LogoText);
 customElements.define("content-header", ContentHeader);
