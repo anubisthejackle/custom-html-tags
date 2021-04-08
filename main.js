@@ -27,6 +27,11 @@ class ARIAImg extends HTMLElement {
 }
 
 class LogoText extends ARIAHeading {
+    constructor() {
+        super();
+        this.setAttribute('aria-level', 1);
+    }
+    
     connectedCallback() {
         let h1 = document.createElement('h1');
         setTimeout( () => {
