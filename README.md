@@ -33,3 +33,5 @@ Where a pure HTML tag is fine, then continue to use pure HTML tags, but the seco
 The benefits are multiple: Semantic markup makes our HTML easier to read, debug, and style. It also creates reusable components that we can incorporate everywhere. Removing inline classes and styles shrinks the size of our HTML, speeding up the download process, and improving all of our core web vitals. Creating custom html components with a focus on accessibility promotes a world where accessibility is top of mind for everyone who writes code, while also putting ourselves in a position to repair any accessibility issues without having to restructure the entire website.
 
 Everything has a place, and everyone knows what that place is.
+
+Included in the build pipeline is a Vite plugin to minify the HTML, which removes all extraneous whitespace, leaving the smallest build size that we can get to with this project.
