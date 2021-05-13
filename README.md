@@ -8,6 +8,9 @@ The project itself is _technically_ a Vite app, but only because it benefits fro
 # Contributing
 Ignore the `/docs` folder entirely. This is our built folder, and changes should not be made there. Instead, there are three distinct files for changes.
 
+## Installing
+Clone the repository, and then run `npm install`. This should take care of all your dependencies.
+
 ## ./index.html
 This is our single page HTML content. This is our structure. No styling should be added here, no functionality, only markup.
 
@@ -17,7 +20,10 @@ This is our functionality. Largely, this should be kept minimal, and focused on 
 ## ./src/index.css
 Every style that is used starts here. We use Tailwind CSS to apply styles to each custom HTML tag, filtering things through PostCSS to remove any unused style, leaving us with the bare minimum amount of CSS that we need to create the look we are going for.
 
-Where straight Tailwind falls short, we incorporate traditional CSS (such as for the site logo). 
+Where straight Tailwind falls short, we incorporate traditional CSS (such as for the site logo).
+
+## Building
+Please don't commit built files, new built files will be generated periodically as merges are made to `main`.
 
 # Using this in a production application
 It's obvious this project is just a thought experiment. There are already perfectly good tags for most, if not all, of what we're creating custom HTML tags for here. It was never about creating _perfect_ HTML.
