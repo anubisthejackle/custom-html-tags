@@ -136,7 +136,30 @@
           <content-header id="a11y">
             A word about Accessibility
           </content-header>
-          {{More Research Required}}
+          <content-paragraph>
+            I have thought a lot about accessibility, as it relates to this project. Mainly because I am not an expert in accessibility,
+            and I truly do not want to get it wrong. A lot has been said about custom HTML elements, and the accesibility failures that
+            they pose. To that I say, absolutely. If you ignore accessibility, you will, by default, fail at it. But that does not
+            necessarily have to be the case.
+          </content-paragraph>
+
+          <content-paragraph>
+            The idea behind this project is to keep everything in it's own place. HTML for structure, CSS for style, but what about function?
+            For that, we have JavaScript. Accessibility isn't just one thing, though, it needs to integrate in all areas of a project. Things
+            need to be structured in ways that make sense, styled in ways that are accessible to everyone, and then there is functionality.
+          </content-paragraph>
+
+          <content-paragraph>
+            Each custom HTML element on this page contains a corresponding HTMLElement class in the JavaScript. These classes are used to
+            define their ARIA roles, and any other accessibility attributes that they require. In a larger project, more thought would be
+            put into these, but the current structure works to prove the concept. It is entirely possible to create accessible custom HTML
+            elements, as long as the work is put in.
+          </content-paragraph>
+
+          <content-paragraph>
+            One place that we could start that work is by creating a framework of Accessible-By-Default HTML Elements that could be extended
+            by any project that needs them, but that's a conversation for a different day.
+          </content-paragraph>
         </content-paragraph>
     
         <content-paragraph>
